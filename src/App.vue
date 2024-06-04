@@ -1,7 +1,8 @@
-<template lang="">
+<template>
+  <div class="container">
     <Navbar />
-    <RouterView/>
-
+    <RouterView />
+  </div>
 </template>
 <script>
 import { Navbar } from "./components";
@@ -9,7 +10,7 @@ import { RouterView } from "vue-router";
 export default {
   components: {
     Navbar,
-    RouterView
+    RouterView,
   },
 };
 </script>

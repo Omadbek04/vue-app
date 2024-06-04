@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex flex-column flex-md-row align-items-center py-3 mb-4 border-bottom">
+  <div class="d-flex flex-column flex-md-row align-items-center py-3 mb-4 border-bottom">
     <div @click="goToAbout" class="cursor-pointer d-flex align-items-center link-body-emphasis">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img">
         <title>Vue app</title>
@@ -29,7 +29,7 @@ export default {
 };
 </script>
 <style scoped>
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer !important;
 }
 </style>

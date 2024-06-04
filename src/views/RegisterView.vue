@@ -1,13 +1,15 @@
-<template lang="">
-    <div>
-        Register
-    </div>
+<template>
+    <section>
+        <Register />
+    </section>
 </template>
 <script>
+import Register from "@/components/Register.vue";
 export default {
-    name:"register"
-}
+  name: "register",
+  components: {
+    Register,
+  },
+};
 </script>
-<style lang="">
-    
-</style>
+<style lang=""></style>

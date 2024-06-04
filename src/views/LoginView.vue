@@ -1,13 +1,13 @@
-<template lang="">
-    <div>
-        login
-    </div>
+<template >
+        <LoginVue />
 </template>
 <script>
+import LoginVue from "@/components/Login.vue";
 export default {
-    name:"login"
-}
+  name: "login",
+  components: {
+    LoginVue,
+  },
+};
 </script>
-<style lang="">
-    
-</style>
+<style lang=""></style>
