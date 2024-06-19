@@ -13,13 +13,21 @@
 export default {
   computed: {
     isLoading() {
-      return this.$store.state.auth.isLoading
+      return this.$store.state.auth.isLoading;
     },
   },
   methods: {
     handlerIsLoading(e) {
-      e.preventDefault()
-      this.$store.dispatch('register  ')
+      e.preventDefault();
+      const data = {
+        username: "Abdullayev....",
+        email: "abdullayev@omadbek.comsa",
+        password: "12345678o....",
+      };
+      this.$store
+        .dispatch("register", data)
+        .than((user) => console.log("User", user))
+        .catch((err) => console.log("Error", err));
     },
   },
 };
